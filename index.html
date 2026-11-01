@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ぺりたん | AI × 建設</title>
+<meta name="description" content="建設の現場で測量と施工管理をしている ぺりたん の note・X・BOOTH のリンク集">
+<style>
+/* layout: スマホで縦に読む1列。方眼紙の地に、図面の表題欄ふうの名札と、リンクのカードを並べる */
+:root{
+  --paper:#f5f4ee; --grid:#d3dfeb; --surface:#ffffff; --ink:#1d2a36; --muted:#5a6672; --line:#1d2a36;
+  --blue:#1f4e8c; --yellow:#f2c200; --black:#1a1a1a; --shadow:rgba(29,42,54,.16);
+  --f:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI","Yu Gothic","Meiryo",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#151b20; --grid:#24303a; --surface:#1d252c; --ink:#e6ecf1; --muted:#9fb0bd; --line:#8fa3b3;
+  --blue:#7fb0ef; --shadow:rgba(0,0,0,.35); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#151b20; --grid:#24303a; --surface:#1d252c; --ink:#e6ecf1; --muted:#9fb0bd; --line:#8fa3b3;
+  --blue:#7fb0ef; --shadow:rgba(0,0,0,.35); color-scheme:dark}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 40px}
+.stripe{height:14px;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));background:repeating-linear-gradient(-45deg,var(--yellow) 0 14px,var(--black) 14px 28px)}
+main{max-width:34rem;margin:0 auto;display:grid;gap:28px;padding-top:28px}
+.plate{background:var(--surface);border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow)}
+.plate .top{display:flex;align-items:baseline;gap:12px;padding:16px 18px;border-bottom:2px solid var(--line);flex-wrap:wrap}
+.plate h1{margin:0;font-size:2rem;line-height:1.2}
+.plate .sub{color:var(--blue);font-weight:700;font-size:1.05rem}
+.plate p{margin:0;padding:14px 18px;font-size:1rem}
+.plate em{font-style:normal;border-bottom:4px solid var(--yellow)}
+.topics{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 16px}
+.topics span{border:1.5px solid var(--line);padding:1px 10px;font-size:.85rem;font-weight:700}
+section{display:grid;gap:10px}
+h2{margin:0;font-size:.85rem;letter-spacing:.12em;color:var(--muted);font-weight:700}
+a.card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-decoration:none;color:var(--ink);
+  background:var(--surface);border:2px solid var(--line);padding:12px 14px;box-shadow:4px 4px 0 var(--shadow);transition:transform .12s}
+a.card:hover{transform:translate(-2px,-2px)}
+a.card:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.tag{font-size:.7rem;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--blue);padding:3px 8px;min-width:3.4em;text-align:center}
+.t{min-width:0}
+.t b{display:block;font-size:1rem;line-height:1.4}
+.t small{display:block;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}
+.arrow{color:var(--muted);font-size:1.2rem}
+footer{text-align:center;color:var(--muted);font-size:.8rem}
+@media (prefers-reduced-motion: reduce){a.card{transition:none}}
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<main>
+  <div class="plate">
+    <div class="top"><h1>ぺりたん</h1><span class="sub">AI × 建設</span></div>
+    <p>建設の現場で測量と施工管理をしている新入社員です。<em>現場を知る人が、AIで現場の仕組みをつくる</em>ことを目指して、記録とツールを公開しています。</p>
+    <div class="topics"><span>施工管理</span><span>測量</span><span>資格の勉強</span><span>AIツール</span><span>ドローン</span></div>
+  </div>
+
+  <section>
+    <h2>記事</h2>
+    <a class="card" href="https://note.com/pelitan" target="_blank" rel="noopener">
+      <span class="tag">note</span><span class="t"><b>note のトップ</b><small>記事の一覧</small></span><span class="arrow" aria-hidden="true">→</span></a>
+    <a class="card" href="https://note.com/pelitan/n/n61653cbcf0c9" target="_blank" rel="noopener">
+      <span class="tag">連載</span><span class="t"><b>AIで建設の『初めての元請け』を助けたい #1</b><small>Anthropic 初の日本全国ハッカソンの挑戦記</small></span><span class="arrow" aria-hidden="true">→</span></a>
+  </section>
+
+  <section>
+    <h2>SNS</h2>
+    <a class="card" href="https://x.com/pelitan_drone" target="_blank" rel="noopener">
+      <span class="tag">X</span><span class="t"><b>X(@pelitan_drone)</b><small>毎日の作業の記録</small></span><span class="arrow" aria-hidden="true">→</span></a>
+  </section>
+
+  <section>
+    <h2>作ったもの(BOOTH)</h2>
+    <a class="card" href="https://pelitan.booth.pm/" target="_blank" rel="noopener">
+      <span class="tag">BOOTH</span><span class="t"><b>お店のトップ</b><small>pelitan.booth.pm</small></span><span class="arrow" aria-hidden="true">→</span></a>
+    <a class="card" href="https://pelitan.booth.pm/items/8981216" target="_blank" rel="noopener">
+      <span class="tag">無料</span><span class="t"><b>二等学科試験 対策アプリ 無料版(50問)</b><small>ドローンの国家資格の学科対策</small></span><span class="arrow" aria-hidden="true">→</span></a>
+    <a class="card" href="https://pelitan.booth.pm/items/9003682" target="_blank" rel="noopener">
+      <span class="tag">完全版</span><span class="t"><b>二等学科試験 対策アプリ 完全版(546問)</b><small>全問に教則のページと引用つき</small></span><span class="arrow" aria-hidden="true">→</span></a>
+    <a class="card" href="https://pelitan.booth.pm/items/9003918" target="_blank" rel="noopener">
+      <span class="tag">無料</span><span class="t"><b>特定飛行・カテゴリー整理表</b><small>飛ばす前の確認に</small></span><span class="arrow" aria-hidden="true">→</span></a>
+  </section>
+
+  <footer>ぺりたん | AI × 建設</footer>
+</main>
+</body>
+</html>
