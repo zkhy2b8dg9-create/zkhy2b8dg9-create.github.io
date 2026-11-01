@@ -30,17 +30,18 @@ main{max-width:34rem;margin:0 auto;display:grid;gap:28px;padding-top:28px}
 .plate .sub{color:var(--blue);font-weight:700;font-size:1.05rem}
 .plate p{margin:0;padding:14px 18px;font-size:1rem}
 .plate em{font-style:normal;border-bottom:4px solid var(--yellow)}
-.topics{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 16px}
-.topics span{border:1.5px solid var(--line);padding:1px 10px;font-size:.85rem;font-weight:700}
-section{display:grid;gap:10px}
+.doing{list-style:none;margin:0;padding:0 18px 16px;display:grid;gap:10px}
+.doing li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:baseline;font-size:.95rem}
+.doing b{font-size:.75rem;letter-spacing:.08em;border:1.5px solid var(--line);padding:1px 8px;white-space:nowrap}
+section{display:grid;gap:12px}
 h2{margin:0;font-size:.85rem;letter-spacing:.12em;color:var(--muted);font-weight:700}
 a.card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-decoration:none;color:var(--ink);
   background:var(--surface);border:2px solid var(--line);padding:12px 14px;box-shadow:4px 4px 0 var(--shadow);transition:transform .12s}
 a.card:hover{transform:translate(-2px,-2px)}
 a.card:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-.tag{font-size:.7rem;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--blue);padding:3px 8px;min-width:3.4em;text-align:center}
+.tag{font-size:.75rem;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--blue);padding:4px 8px;min-width:4.2em;text-align:center}
 .t{min-width:0}
-.t b{display:block;font-size:1rem;line-height:1.4}
+.t b{display:block;font-size:1.1rem;line-height:1.4}
 .t small{display:block;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}
 .arrow{color:var(--muted);font-size:1.2rem}
 footer{text-align:center;color:var(--muted);font-size:.8rem}
@@ -52,34 +53,21 @@ footer{text-align:center;color:var(--muted);font-size:.8rem}
 <main>
   <div class="plate">
     <div class="top"><h1>ぺりたん</h1><span class="sub">AI × 建設</span></div>
-    <p>建設の現場で測量と施工管理をしている新入社員です。<em>現場を知る人が、AIで現場の仕組みをつくる</em>ことを目指して、記録とツールを公開しています。</p>
-    <div class="topics"><span>施工管理</span><span>測量</span><span>資格の勉強</span><span>AIツール</span><span>ドローン</span></div>
+    <p>建設の現場で測量と施工管理をしている新入社員です。<em>現場を知る人が、AIで現場の仕組みをつくる</em>ことを目指しています。</p>
+    <ul class="doing">
+      <li><b>つくる</b>AI(Claude)で、建設の現場の困りごとを助けるツールを作っています。いまはハッカソンで、初めて元請けをする会社のためのツールに挑戦中です</li>
+      <li><b>まなぶ</b>資格の勉強のツールも自分で作り、測量や施工管理の資格を目指しています</li>
+      <li><b>とどける</b>作ったものと、作る中で分かったことを公開しています</li>
+    </ul>
   </div>
 
   <section>
-    <h2>記事</h2>
     <a class="card" href="https://note.com/pelitan" target="_blank" rel="noopener">
-      <span class="tag">note</span><span class="t"><b>note のトップ</b><small>記事の一覧</small></span><span class="arrow" aria-hidden="true">→</span></a>
-    <a class="card" href="https://note.com/pelitan/n/n61653cbcf0c9" target="_blank" rel="noopener">
-      <span class="tag">連載</span><span class="t"><b>AIで建設の『初めての元請け』を助けたい #1</b><small>Anthropic 初の日本全国ハッカソンの挑戦記</small></span><span class="arrow" aria-hidden="true">→</span></a>
-  </section>
-
-  <section>
-    <h2>SNS</h2>
+      <span class="tag">note</span><span class="t"><b>記事</b><small>ツールづくりの記録と、AI と建設について考えたこと</small></span><span class="arrow" aria-hidden="true">→</span></a>
     <a class="card" href="https://x.com/pelitan_drone" target="_blank" rel="noopener">
-      <span class="tag">X</span><span class="t"><b>X(@pelitan_drone)</b><small>毎日の作業の記録</small></span><span class="arrow" aria-hidden="true">→</span></a>
-  </section>
-
-  <section>
-    <h2>作ったもの(BOOTH)</h2>
+      <span class="tag">X</span><span class="t"><b>毎日の記録</b><small>その日やったことを短く(@pelitan_drone)</small></span><span class="arrow" aria-hidden="true">→</span></a>
     <a class="card" href="https://pelitan.booth.pm/" target="_blank" rel="noopener">
-      <span class="tag">BOOTH</span><span class="t"><b>お店のトップ</b><small>pelitan.booth.pm</small></span><span class="arrow" aria-hidden="true">→</span></a>
-    <a class="card" href="https://pelitan.booth.pm/items/8981216" target="_blank" rel="noopener">
-      <span class="tag">無料</span><span class="t"><b>二等学科試験 対策アプリ 無料版(50問)</b><small>ドローンの国家資格の学科対策</small></span><span class="arrow" aria-hidden="true">→</span></a>
-    <a class="card" href="https://pelitan.booth.pm/items/9003682" target="_blank" rel="noopener">
-      <span class="tag">完全版</span><span class="t"><b>二等学科試験 対策アプリ 完全版(546問)</b><small>全問に教則のページと引用つき</small></span><span class="arrow" aria-hidden="true">→</span></a>
-    <a class="card" href="https://pelitan.booth.pm/items/9003918" target="_blank" rel="noopener">
-      <span class="tag">無料</span><span class="t"><b>特定飛行・カテゴリー整理表</b><small>飛ばす前の確認に</small></span><span class="arrow" aria-hidden="true">→</span></a>
+      <span class="tag">BOOTH</span><span class="t"><b>作ったもの</b><small>ドローンの国家資格(二等)の学科対策アプリなど。無料版あり</small></span><span class="arrow" aria-hidden="true">→</span></a>
   </section>
 
   <footer>ぺりたん | AI × 建設</footer>
